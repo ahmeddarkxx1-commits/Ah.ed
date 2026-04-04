@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Mahmoud | أحمد محمود</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <!-- Sidebar Nav rounded card — like anmka -->
+    <div class="sb-inner">
+      <div class="sb-nav-card">
+        <a href="#hero" onclick="closeSidebar()">
+          <span class="ar-only">خدماتنا</span><span class="en-only">Services</span>
+        </a>
+        <a href="#skills" onclick="closeSidebar()">
+          <span class="ar-only">مهاراتي</span><span class="en-only">Skills</span>
+        </a>
+        <a href="#stats" onclick="closeSidebar()">
+          <span class="ar-only">إنجازاتي</span><span class="en-only">Stats</span>
+        </a>
+        <a href="#projects" onclick="closeSidebar()">
+          <span class="ar-only">أعمالي</span><span class="en-only">Projects</span>
+        </a>
+        <a href="#contact" onclick="closeSidebar()">
+          <span class="ar-only">تواصل معي</span><span class="en-only">Contact</span>
+        </a>
+      </div>
+      <a href="#contact" class="sb-cta-btn" onclick="closeSidebar()">
+        <span class="ar-only">احصل على عرض سعر</span>
+        <span class="en-only">Get a Quote</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav>
+    <button class="hamburger-btn" onclick="openSidebar()">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-logo-wrap">
+      <div class="nav-logo">Ahmed.dev</div>
+      <div class="nav-sub ar-only">أحمد محمود</div>
+      <div class="nav-sub en-only">Ahmed Mahmoud</div>
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">ع</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero" id="hero">
+    <div class="hero-canvas" id="canvas-container"></div>
+    <div class="hero-content">
+      <p class="hero-label ar-only">مطور واجهات ومبرمج مستقل</p>
+      <p class="hero-label en-only">Full-Stack Developer & UI/UX Designer</p>
+      <h1 class="ar-only">بوفر عليك وقت ومجهود بتطبيقات<br>ومواقع بتحل مشاكل شغلك</h1>
+      <h1 class="en-only">Robust web tools and automation bots<br>that save you time and<br>grow your revenue.</h1>
+      <p class="hero-desc ar-only">أهلاً، أنا أحمد. مطور ومصمم واجهات بشتغل كفريلانسر. السنين اللي فاتت، ساعدت أصحاب أعمال كتير يزودوا مبيعاتهم بمواقع سريعة (React/Next.js) وبوتات تيليجرام بتخلص الشغل المكرر.</p>
+      <p class="hero-desc en-only">Hi, I'm Ahmed Mahmoud. I build high-performing web apps and custom Telegram automations that strip away manual work and let business owners focus on growth.</p>
+      <div class="tech-row">
+        <span class="tech-tag">React</span><span class="tech-tag">Next.js</span><span class="tech-tag">Python</span>
+        <span class="tech-tag">Figma</span><span class="tech-tag">Telegram API</span><span class="tech-tag">UI/UX</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-purple ar-only">خلينا نتكلم في مشروعك</a>
+        <a href="#contact" class="btn-purple en-only">Let's talk project</a>
+        <a href="#projects" class="btn-outline ar-only">شوف شغلي</a>
+        <a href="#projects" class="btn-outline en-only">See my past work</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- STATS -->
+  <div class="sec-wrap" id="stats">
+    <p class="section-label ar-only">بالأرقام</p>
+    <p class="section-label en-only">The Track Record</p>
+    <h2 class="section-title ar-only">خلاصة تجاربي<br>في السوق</h2>
+    <h2 class="section-title en-only">Helping 30+ businesses<br>scale and save time.</h2>
+    <p class="section-sub ar-only">من ستارت-أبس صغيرة لشركات بقالها سنين، تركيزي دايماً إني أعملك سيستم ميعطلش.</p>
+    <p class="section-sub en-only">From local startups to international brands, I focus on building platforms that make your operations run smoothly.</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">2+</div>
+        <div class="stat-lbl ar-only">سنين خبرة</div>
+        <div class="stat-lbl en-only">Years Exp.</div>
+        <div class="stat-sub ar-only">شغل عملي ع الأرض</div>
+        <div class="stat-sub en-only">Real-World Dev</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">30+</div>
+        <div class="stat-lbl ar-only">مشروع اتسلم</div>
+        <div class="stat-lbl en-only">Projects Shipped</div>
+        <div class="stat-sub ar-only">بين مواقع وبوتات</div>
+        <div class="stat-sub en-only">From MVPs to full apps</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl ar-only">تقييم العملاء</div>
+        <div class="stat-lbl en-only">Client Retention</div>
+        <div class="stat-sub ar-only">مفيش عميل بيمشي زعلان</div>
+        <div class="stat-sub en-only">Long-term partnerships</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">24/7</div>
+        <div class="stat-lbl ar-only">دعم ومتابعة</div>
+        <div class="stat-lbl en-only">Reliability</div>
+        <div class="stat-sub ar-only">معاك لو حصل أي طارئ</div>
+        <div class="stat-sub en-only">Always there if things break</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <div class="sec-wrap" id="projects">
+    <p class="section-label ar-only">إزاي ساعدت عملائي؟</p>
+    <p class="section-label en-only">Recent Projects</p>
+    <h2 class="section-title ar-only">مشاريع خلصتها قريباً<br>تفهمك طريقة شغلي</h2>
+    <h2 class="section-title en-only">What I've been<br>working on.</h2>
+    <p class="section-sub ar-only">دي عينات من أنظمة بنيتها بالكامل، فرقت مع أصحابها في المبيعات وتقليل الشغل اليدوي.</p>
+    <p class="section-sub en-only">Here are a few examples of how I've helped clients automate operations and improve customer experiences.</p>
+    
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="proj-img-ph">
+          <img src="./assets/el-basyouni.png" alt="El Basyouni" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat ar-only">موقع تعريفي للشركات</div>
+          <div class="proj-cat en-only">Corporate Landing Page</div>
+          <h3 class="proj-title ar-only">مركز البسيوني لطلمبات المياه</h3>
+          <h3 class="proj-title en-only">El Basyouni Center</h3>
+          <p class="proj-desc ar-only">صممت وبرمجت موقع لشركة توريد طلمبات، بيركز على عرض الخدمات بطريقة احترافية بتزود ثقة العملاء وتحول الزيارات لرسائل واتساب مباشرة.</p>
+          <p class="proj-desc en-only">Developed a high-converting corporate page for a water pump supplier, focusing on professional presentation and seamless WhatsApp lead generation.</p>
+          <div class="tags"><span class="tag">Frontend</span><span class="tag">UI/UX</span></div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="proj-img-ph">
+          <img src="./assets/dr-mobily.png" alt="Dr Mobily" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="proj-body">
+          <div class="proj-cat ar-only">واجهة متجر إلكتروني</div>
+          <div class="proj-cat en-only">E-commerce Interface</div>
+          <h3 class="proj-title ar-only">دكتور موبايلي (Dr. Mobily)</h3>
+          <h3 class="proj-title en-only">Dr. Mobily Shop</h3>
+          <p class="proj-desc ar-only">واجهة عصرية وسريعة لمحل موبايلات، بتعرض العروض اليومية بوضوح وتوفر تجربة مستخدم ممتازة عشان العميل يشتري أو يستفسر بسهولة.</p>
+          <p class="proj-desc en-only">Built a fast, futuristic interface for a mobile & accessories shop, highlighting daily offers and streamlining customer inquiries effectively.</p>
+          <div class="tags"><span class="tag">Next.js</span><span class="tag">React</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <div class="sec-wrap" id="services">
+    <p class="section-label ar-only">بنقدر نساعد بـ إيه؟</p>
+    <p class="section-label en-only">How I Can Help</p>
+    <h2 class="section-title ar-only">حلول متفصلة<br>على مقاس بيزنسك</h2>
+    <h2 class="section-title en-only">Solutions tailored<br>to your business.</h2>
+    <p class="section-sub ar-only">أنا مش مجرد مبرمج بيكتب كود وخلاص، أنا بشاركك التفكير عشان نطلع بمنتج يزود دخلك ويقلل مصاريفك.</p>
+    <p class="section-sub en-only">I partner with you to find out exactly what your business needs, then I build it. No technical jargon, just results.</p>
+
+    <!-- WEB -->
+    <div class="svc-card">
+      <div class="svc-top">
+        <div class="svc-title-text ar-only">برمجة المواقع</div>
+        <div class="svc-title-text en-only">Web Development</div>
+        <div class="svc-icon-box svc-icon-blue">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </div>
+      </div>
+      <p class="svc-desc ar-only">محتاج داشبورد تدير بيها شغلك أو موقع يجيبلك عملاء؟ ببرمجلك صفحات وتطبيقات سريعة ومضبوطة للسيو، عشان العميل ميخرجش بسبب بطء التحميل.</p>
+      <p class="svc-desc en-only">Need a dashboard to manage your data or a fast site to bring in leads? I build high-performing web apps optimized for speed and SEO so your customers get a flawless experience.</p>
+      <div class="mock-box">
+        <div class="mock-header">
+          <div class="mock-dots"><span style="background:#22c55e"></span><span style="background:#f59e0b"></span><span
+              style="background:#ef4444"></span></div>
+          <span class="ar-only">معاينة الموقع</span><span class="en-only">Website Preview</span>
+        </div>
+        <div class="mock-grid">
+          <div class="mock-stat">
+            <div class="mv">1.2K</div>
+            <div class="ml ar-only">زيارة</div>
+            <div class="ml en-only">Visits</div>
+            <div class="mg">+18%</div>
+          </div>
+          <div class="mock-stat">
+            <div class="mv">85%</div>
+            <div class="ml ar-only">تحويل</div>
+            <div class="ml en-only">Convert</div>
+            <div class="mg">+12%</div>
+          </div>
+          <div class="mock-stat">
+            <div class="mv">0.8s</div>
+            <div class="ml ar-only">سرعة</div>
+            <div class="ml en-only">Speed</div>
+            <div class="mg">&#9889;</div>
+          </div>
+        </div>
+        <div class="mock-bar-row">
+          <div class="mock-bar-label ar-only">سرعة التحميل</div>
+          <div class="mock-bar-label en-only">Load Speed</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:90%"></div>
+          </div>
+        </div>
+        <div class="mock-bar-row">
+          <div class="mock-bar-label ar-only">تجربة المستخدم</div>
+          <div class="mock-bar-label en-only">User Experience</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:95%"></div>
+          </div>
+        </div>
+        <div class="mock-bar-row" style="margin-bottom:0">
+          <div class="mock-bar-label">SEO</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">React</span><span
+          class="tag">Next.js</span></div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="svc-card">
+      <div class="svc-top">
+        <div class="svc-title-text ar-only">تصميم UI/UX</div>
+        <div class="svc-title-text en-only">UI/UX Design</div>
+        <div class="svc-icon-box svc-icon-purple">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+            <line x1="12" y1="18" x2="12.01" y2="18" />
+          </svg>
+        </div>
+      </div>
+      <p class="svc-desc ar-only">قبل ما نكتب سطر كود واحد، برسم لك واجهات جاهزة في Figma مريحة للعين. الهدف إن العميل يوصل للي عايزه من غير ما يتوه في نص الطريق.</p>
+      <p class="svc-desc en-only">I design intuitive Figma prototypes before we write any code. This ensures we get the user journey right, preventing expensive revisions later and keeping customers engaged.</p>
+      <div class="platform-grid">
+        <div class="platform-tile">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#22c55e">
+            <path
+              d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24C14.9 8.13 13.5 7.75 12 7.75s-2.9.38-4.47 1.16L5.65 5.67c-.19-.28-.54-.38-.83-.22-.3.16-.42.54-.26.85L6.4 9.48C3.3 11.25 1.28 14.44 1 18h22c-.28-3.56-2.3-6.75-5.4-8.52zM7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" />
+          </svg>
+          Android
+        </div>
+        <div class="platform-tile">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
+          iOS
+        </div>
+      </div>
+      <div class="tags"><span class="tag">Figma</span><span class="tag">UI/UX</span><span class="tag">Adobe XD</span>
+      </div>
+    </div>
+
+    <!-- BOTS -->
+    <div class="svc-card">
+      <div class="svc-top">
+        <div class="svc-title-text ar-only">بوتات تيليجرام وأتمتة</div>
+        <div class="svc-title-text en-only">Telegram Bots & Automation</div>
+        <div class="svc-icon-box svc-icon-purple">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="10" rx="2" />
+            <circle cx="12" cy="5" r="2" />
+            <path d="M12 7v4" />
+            <line x1="8" y1="16" x2="8" y2="16" />
+            <line x1="16" y1="16" x2="16" y2="16" />
+          </svg>
+        </div>
+      </div>
+      <p class="svc-desc ar-only">ريّح دماغك من الطحن اليومي! ببرمجلك بوتات بتدير الاشتراكات وتمسك بوابات الدفع وترد على أسئلة العملاء كأن معاك موظف مبينامش.</p>
+      <p class="svc-desc en-only">Stop doing repetitive tasks manually. I construct custom bots that handle your subscriptions, process payments seamlessly, and answer FAQs while you sleep.</p>
+      <div class="feat-grid">
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">تيليجرام</div>
+            <div class="ft-title en-only">Telegram</div>
+            <div class="ft-sub ar-only">ربط مباشر</div>
+            <div class="ft-sub en-only">Direct Link</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="#3b82f6">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.51c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.51 13.99l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.306.596z" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">مدفوعات</div>
+            <div class="ft-title en-only">Payments</div>
+            <div class="ft-sub ar-only">بوابات متعددة</div>
+            <div class="ft-sub en-only">Multi-gateway</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="4" width="22" height="16" rx="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">ردود ذكية</div>
+            <div class="ft-title en-only">Smart Replies</div>
+            <div class="ft-sub ar-only">تلقائية 24/7</div>
+            <div class="ft-sub en-only">Auto 24/7</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a10 10 0 1 0 10 10" />
+              <path d="M12 6v6l4 2" />
+              <circle cx="19" cy="5" r="3" fill="#8b5cf6" stroke="none" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">تقارير</div>
+            <div class="ft-title en-only">Reports</div>
+            <div class="ft-sub ar-only">تحليلات</div>
+            <div class="ft-sub en-only">Analytics</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f59e0b"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg></div>
+        </div>
+      </div>
+      <div class="tags"><span class="tag">Python</span><span class="tag">Aiogram</span><span
+          class="tag">Automation</span></div>
+    </div>
+
+    <!-- CHANNELS -->
+    <div class="svc-card">
+      <div class="svc-top">
+        <div class="svc-title-text ar-only">إدارة قنوات تيليجرام</div>
+        <div class="svc-title-text en-only">Telegram Channel Management</div>
+        <div class="svc-icon-box svc-icon-cyan">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z" />
+          </svg>
+        </div>
+      </div>
+      <p class="svc-desc ar-only">لو شغلك معتمد على تيليجرام، بجهزلك قنوات محترفة بهوية بصرية مميزة وببرمج البوستات تنزل بمزاجها عشان تركز أنت في الكونتنت.</p>
+      <p class="svc-desc en-only">I set up your entire Telegram community presence, from professional visual branding to automated posting calendars that keep your audience consistently engaged.</p>
+      <div class="feat-grid">
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">برانينج</div>
+            <div class="ft-title en-only">Branding</div>
+            <div class="ft-sub ar-only">هوية احترافية</div>
+            <div class="ft-sub en-only">Pro Identity</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f472b6"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">أتمتة</div>
+            <div class="ft-title en-only">Automation</div>
+            <div class="ft-sub ar-only">نشر تلقائي</div>
+            <div class="ft-sub en-only">Auto Post</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#06b6d4"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">نمو</div>
+            <div class="ft-title en-only">Growth</div>
+            <div class="ft-sub ar-only">استراتيجية</div>
+            <div class="ft-sub en-only">Strategy</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c55e"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+              <polyline points="17 6 23 6 23 12" />
+            </svg></div>
+        </div>
+        <div class="feat-tile">
+          <div class="ft-text">
+            <div class="ft-title ar-only">إدارة</div>
+            <div class="ft-title en-only">Management</div>
+            <div class="ft-sub ar-only">لوحة تحكم</div>
+            <div class="ft-sub en-only">Dashboard</div>
+          </div>
+          <div class="ft-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg></div>
+        </div>
+      </div>
+      <div class="tags"><span class="tag">Telegram</span><span class="tag">Branding</span><span
+          class="tag">Growth</span></div>
+    </div>
+
+    <!-- UI/UX -->
+    <div class="svc-card">
+      <div class="svc-top">
+        <div class="svc-title-text ar-only">استشارات تقنية واستراتيجية</div>
+        <div class="svc-title-text en-only">Technical Strategy</div>
+        <div class="svc-icon-box svc-icon-orange">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="13.5" cy="6.5" r="0.5" fill="white" />
+            <circle cx="17.5" cy="10.5" r="0.5" fill="white" />
+            <circle cx="8.5" cy="7.5" r="0.5" fill="white" />
+            <circle cx="6.5" cy="12.5" r="0.5" fill="white" />
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+          </svg>
+        </div>
+      </div>
+      <p class="svc-desc ar-only">عندك فكرة بس معندكش خلفية برمجية؟ بنحدد مكالمة أرتبلك فيها أفكارك ونشوف إيه أرخص وأكفأ أدوات تبدأ بيها قبل ما تصرف أي فلوس على الفاضي.</p>
+      <p class="svc-desc en-only">Got an idea but no tech background? Let's get on a call. I'll help you choose the most cost-effective tools and map out a step-by-step technical plan before you spend a dime.</p>
+      <div class="mock-box">
+        <div class="mock-bar-row">
+          <div class="mock-bar-label ar-only">تجربة المستخدم</div>
+          <div class="mock-bar-label en-only">User Experience</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:96%;background:#8b5cf6"></div>
+          </div>
+        </div>
+        <div class="mock-bar-row">
+          <div class="mock-bar-label ar-only">جودة التصميم</div>
+          <div class="mock-bar-label en-only">Design Quality</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:98%;background:#8b5cf6"></div>
+          </div>
+        </div>
+        <div class="mock-bar-row" style="margin-bottom:0">
+          <div class="mock-bar-label ar-only">رضا العميل</div>
+          <div class="mock-bar-label en-only">Client Satisfaction</div>
+          <div class="mock-bar-track">
+            <div class="mock-bar-fill" style="width:100%;background:#22c55e"></div>
+          </div>
+        </div>
+      </div>
+      <div class="tags"><span class="tag">Figma</span><span class="tag">Adobe XD</span><span
+          class="tag">Wireframes</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <div class="sec-wrap" id="skills">
+    <p class="section-label ar-only">عدة الشغل الثقيلة</p>
+    <p class="section-label en-only">My Toolbelt</p>
+    <h2 class="section-title ar-only">تقنيات بتعتمد عليها<br>الشركات الكبيرة</h2>
+    <h2 class="section-title en-only">Reliable tech<br>that successfully scales.</h2>
+    <p class="section-sub ar-only">مش بجري ورا التريند، بستخدم تكنولوجيا أثبتت كفاءة وقابلة للتطوير، وأي مبرمج ييجي بعدي يقرأها ويعدل عليها ببساطة.</p>
+    <p class="section-sub en-only">I don't chase every new programming trend. I use proven, industry-standard tools so your project remains stable and affordable to maintain for years.</p>
+    <div class="skills-grid">
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#61DAFB">
+          <path
+            d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a22.7 22.7 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9s-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03s1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16l.3.51m1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68 0 1.69-1.83 2.93-4.37 3.68.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63C3.43 14.93 1.6 13.69 1.6 12c0-1.69 1.83-2.93 4.37-3.68-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95z" />
+        </svg>
+        <div>
+          <div class="sk-name">React / Next.js</div>
+          <div class="sk-sub">Frontend Framework</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#f7df1e">
+          <rect width="24" height="24" rx="4" fill="#f7df1e" />
+          <path
+            d="M6.2 17.2c.4.7.9 1.2 1.9 1.2 1 0 1.6-.5 1.6-1.1 0-.8-.6-1.1-1.7-1.5l-.5-.2C5.9 15 5 14.2 5 12.7c0-1.4 1.1-2.4 2.7-2.4 1.2 0 2 .4 2.6 1.4l-1.4.9c-.3-.5-.6-.8-1.2-.8-.5 0-.9.3-.9.8 0 .5.3.8 1.3 1.2l.5.2C10.2 14.5 11 15.2 11 16.8c0 1.7-1.3 2.7-3.1 2.7-1.7 0-2.8-.8-3.4-1.9l1.7-1zm6.3.1c.3.5.6.9 1.3.9.6 0 1-.3 1-1.4v-6.4h2v6.5c0 2.3-1.4 3.3-3.3 3.3-1.8 0-2.8-.9-3.3-2l2.3-1z" />
+        </svg>
+        <div>
+          <div class="sk-name">HTML / CSS / JS</div>
+          <div class="sk-sub">Web Foundation</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#3776AB">
+          <path
+            d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969c0 6.18 3.403 5.959 3.403 5.959h2.03v-2.867s-.109-3.4 3.345-3.4h5.762s3.236.052 3.236-3.127V3.314S18.28 0 11.914 0zm-3.2 1.922a1.044 1.044 0 1 1 0 2.087 1.044 1.044 0 0 1 0-2.087zm0 0M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.121S24 18.211 24 12.031c0-6.18-3.403-5.959-3.403-5.959h-2.03v2.867s.109 3.4-3.345 3.4h-5.762s-3.236-.052-3.236 3.127v5.18S5.72 24 12.086 24zm3.2-1.922a1.044 1.044 0 1 1 0-2.087 1.044 1.044 0 0 1 0 2.087z" />
+        </svg>
+        <div>
+          <div class="sk-name">Python</div>
+          <div class="sk-sub">Backend & Bots</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#F24E1E">
+          <path
+            d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.354-3.02-3.019-3.02h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.02s1.354 3.019 3.019 3.019h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 10.49c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V10.49H8.148zm-5.041 4.49c0 2.476-2.014 4.49-4.49 4.49S-5.874 17.456-5.874 14.98s2.014-4.49 4.49-4.49 4.49 2.014 4.49 4.49zm-4.49 3.02c1.665 0 3.019-1.354 3.019-3.02 0-1.664-1.354-3.019-3.019-3.019s-3.019 1.355-3.019 3.019c0 1.666 1.354 3.02 3.019 3.02zM15.852 24c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49 4.49 2.014 4.49 4.49S18.328 24 15.852 24zm0-7.509c-1.665 0-3.019 1.354-3.019 3.019 0 1.665 1.354 3.02 3.019 3.02 1.665 0 3.019-1.355 3.019-3.02 0-1.665-1.354-3.019-3.019-3.019z" />
+        </svg>
+        <div>
+          <div class="sk-name">Figma</div>
+          <div class="sk-sub">UI/UX Design</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <rect width="24" height="24" rx="4" fill="#FF61F6" />
+          <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="white" stroke-width="1.5" fill="none" />
+          <path d="M12 2v20M2 7l10 5 10-5" stroke="white" stroke-width="1.5" />
+        </svg>
+        <div>
+          <div class="sk-name">Adobe XD</div>
+          <div class="sk-sub">Prototyping</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#007ACC">
+          <rect width="24" height="24" rx="4" fill="#007ACC" />
+          <path d="M4.5 12.5l4-4v2.5H15v3H8.5V16.5L4.5 12.5z" fill="white" />
+          <rect x="14" y="8" width="5.5" height="8" rx="1" fill="white" />
+        </svg>
+        <div>
+          <div class="sk-name">VS Code</div>
+          <div class="sk-sub">Code Editor</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#3b82f6">
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.51c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.51 13.99l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.306.596z" />
+        </svg>
+        <div>
+          <div class="sk-name">Telegram API</div>
+          <div class="sk-sub">Bot Dev</div>
+        </div>
+      </div>
+      <div class="sk-tile">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" />
+          <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3" />
+        </svg>
+        <div>
+          <div class="sk-name">Responsive</div>
+          <div class="sk-sub">Mobile-First</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WHY ME -->
+  <div class="sec-wrap" id="why">
+    <p class="section-label ar-only">ليه تختارني كشريك ليك؟</p>
+    <p class="section-label en-only">Why Work With Me?</p>
+    <h2 class="section-title ar-only">التزامي ناحيتك<br>في أي مشروع بنبدأه</h2>
+    <h2 class="section-title en-only">My firm commitments<br>to you as a client.</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          </svg>
+        </div>
+        <h4 class="ar-only">مواعيد صارمة</h4>
+        <h4 class="en-only">Deadlines Guaranteed</h4>
+        <p class="ar-only">وقتك فلوس، عشان كدة لو اتفقنا على ميعاد تسليم، بعتبره التزام قاطع مش مجرد كلام.</p>
+        <p class="en-only">I respect your time heavily. When we agree on a final delivery date, I stick to it without excuses.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <h4 class="ar-only">نظافة الكود</h4>
+        <h4 class="en-only">No Messy Codebases</h4>
+        <p class="ar-only">بكتب كود مفهوم وموثق، عشان لو احتجت في يوم تسلم المشروع لمبرمج تاني ميعانيش ولا يبدأ من الصفر.</p>
+        <p class="en-only">I build structured, well-documented codebases so another team could pick it up instantly if ever required.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+        </div>
+        <h4 class="ar-only">متواجد ومش بختفي</h4>
+        <h4 class="en-only">Zero Ghosting</h4>
+        <p class="ar-only">بخليك عايش معايا في المشروع خطوة بخطوة، وبديك تحديثات أول بأول عشان تبقى مطمن لفلوسك ومجهودنا.</p>
+        <p class="en-only">I provide clear, consistent updates at every step so you always know exactly where your current budget is going.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </div>
+        <h4 class="ar-only">تواصل مريح</h4>
+        <h4 class="en-only">Fluent & Seamless</h4>
+        <p class="ar-only">الفريلانس معتمد عالفهم، والتواصل بالعربي بينا بيجنبنا أي سوء تفاهم بيحصل في المصطلحات التقنية المعقدة.</p>
+        <p class="en-only">Seamlessly fluent in English and Arabic, resulting in ultra-smooth communication for both local and international brands.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <div class="sec-wrap" id="contact">
+    <p class="section-label ar-only">خلينا نشتغل</p>
+    <p class="section-label en-only">Let's Build It</p>
+    <h2 class="section-title ar-only">جاهز تاخد<br>الخطوة الجاية؟</h2>
+    <h2 class="section-title en-only">Ready to get started?</h2>
+    <p class="section-sub ar-only">احكيلي عن مشكلة بيزنسك أو فكرتك، وهرد عليك بخطة عمل واضحة وتكلفة مبدئية.</p>
+    <p class="section-sub en-only">Tell me a bit about your business problems and what you're trying to achieve. I'll get back to you with actionable ideas and a rough estimate.</p>
+
+    <div class="contact-form">
+      <label class="form-label ar-only">الاسم الكامل</label>
+      <label class="form-label en-only">Full Name</label>
+      <input type="text" class="form-input" id="name-input" placeholder="" />
+
+      <label class="form-label ar-only">رقم الموبايل أو البريد</label>
+      <label class="form-label en-only">Phone or Email</label>
+      <input type="text" class="form-input" id="contact-input" placeholder="" />
+
+      <label class="form-label ar-only">نوع الخدمة المطلوبة</label>
+      <label class="form-label en-only">Service Needed</label>
+      <select class="form-select" id="service-select">
+        <option class="ar-only" value="">اختر نوع الخدمة</option>
+      </select>
+
+      <button class="btn-send" onclick="sendInquiry()">
+        <span class="ar-only">إرسال الاستفسار</span>
+        <span class="en-only">Send Inquiry</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13" />
+          <polygon points="22 2 15 22 11 13 2 9 22 2" />
+        </svg>
+      </button>
+    </div>
+
+    <div style="margin-top:16px">
+      <p class="section-label" style="text-align:center;margin-bottom:12px">
+        <span class="ar-only">أو تواصل مباشرة</span>
+        <span class="en-only">Or contact directly</span>
+      </p>
+      <div class="clinks-grid">
+        <a href="https://t.me/GigWork1" class="clink-tile" target="_blank">
+          <div class="clink-icon-box" style="background:rgba(59,130,246,0.15)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#3b82f6">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-2.018 9.51c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L6.51 13.99l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.306.596z" />
+            </svg>
+          </div>
+          <span class="ar-only">تيليجرام</span><span class="en-only">Telegram</span>
+        </a>
+        <a href="https://wa.me/201152628515" class="clink-tile" target="_blank">
+          <div class="clink-icon-box" style="background:rgba(34,197,94,0.15)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#22c55e">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+            </svg>
+          </div>
+          <span class="ar-only">واتساب</span><span class="en-only">WhatsApp</span>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~01cef9025effa6040e" class="clink-tile" target="_blank">
+          <div class="clink-icon-box" style="background:rgba(20,184,166,0.15)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#14b8a6">
+              <path
+                d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.543-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.452-5.439-5.452z" />
+            </svg>
+          </div>
+          <span>Upwork</span>
+        </a>
+        <a href="https://www.fiverr.com" class="clink-tile" target="_blank">
+          <div class="clink-icon-box" style="background:rgba(34,197,94,0.1)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#1dbf73">
+              <path
+                d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-1.85c0-3.016 0-8.04-5.406-8.04v-1.84c7.157 0 7.256 6.56 7.256 9.88zM14.752 3.389h-1.85c0 2.914-1.307 4.338-3.898 4.338h-1.85v-4.338h-1.85v-1.848h1.85v-1.539h1.85v1.539h1.85c4.31 0 5.748 2.86 5.748 7.326 0 4.155-2.25 7.314-6.618 7.314H8.454c-5.38 0-7.904-2.56-7.904-7.832 0-4.468 2.424-6.96 7.904-6.96h.85v1.848h-.85c-4.28 0-6.054 1.56-6.054 5.112 0 3.576 1.774 5.984 6.054 5.984h1.48c2.714 0 4.768-1.544 4.768-5.466 0-4.155-1.36-5.478-4.768-5.478h-.898v-1.848h.898c4.31 0 5.748 2.86 5.748 7.326z" />
+            </svg>
+          </div>
+          <span>Fiverr</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <h3 class="ar-only">كفاية تأجيل لمشروعك المنتظر..</h3>
+    <h3 class="en-only">Stop delaying your next big project.</h3>
+    <p class="ar-only">اضغط على الزرار ونحدد مكالمة سريعة نقلب بيها فكرتك لمنتك حقيقي بيكسب.</p>
+    <p class="en-only">Let's jump on a quick call and turn your idea into a working digital product.</p>
+    <a href="#contact" class="btn-white ar-only">احصل على عرض سعر</a>
+    <a href="#contact" class="btn-white en-only">Get a Quote</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Ahmed.dev | أحمد محمود</div>
+    <p class="ar-only">© 2025 — جميع الحقوق محفوظة</p>
+    <p class="en-only">© 2025 — All rights reserved</p>
+    <p class="ar-only">متاح للعمل الحر عالمياً</p>
+    <p class="en-only">Available for freelance worldwide</p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/201152628515" class="whatsapp-float" target="_blank" aria-label="Contact on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
